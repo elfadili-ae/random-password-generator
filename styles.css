@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -11,11 +15,8 @@ body {
 }
 
 .container {
-    /* display: flex; */
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
     background-color: white;
+    width: 100%;
     max-width: 500px;
     border-radius: 5px;
     padding: 20px;
@@ -28,6 +29,65 @@ body {
     border-bottom: 1px solid black;
 }
 
-.row {
-    padding: 5px;
+.inputBox {
+    position: relative;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
+.inputBox span {
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    position:absolute;
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.passbox {
+    width: 100%;
+    height: 40px;
+    color: #333333;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+input[type="range"] {
+    height: 25px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.row p {
+    font-weight: 700;
+}
+
+.container button {
+    width: 80%;
+    height: 30px;
+    margin: 20px 20px;
+    box-sizing: content-box;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.container button:hover {
+    background-color: #333333;
+    cursor: pointer;
+}
+
+
